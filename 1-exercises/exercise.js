@@ -4,24 +4,30 @@
   - Right click on index.html and select "Open with Live Server"
 */
 
-/*
-Task 1
-=======
+//
+// Write JavaScript below that console.logs:
+//     1. all the "p" element nodes of the document,
+//     --> should log a list of nodes with a length of 6
 
-Write JavaScript below that console.logs:
-    1. all the "p" element nodes of the document,
-    --> should log a list of nodes with a length of 6
+   let allP = document.querySelectorAll("p");
+   for(let p of allP){
+    console.log(p.innerText)
+   }
+  
+   
 
-    2. the first div element node
-    --> should log the ".site-header" node
+//     2. the first div element node
+//     --> should log the ".site-header" node
+let allDiv = document.querySelector("div");
+console.log(allDiv)
 
-    3. the element with id "jumbotronText"
-    --> should log the "#jumbotronText" node
+//     3. the element with id "jumbotronText"
+//     --> should log the "#jumbotronText" node
 
-    4. all the "p" elements of contained inside the .primary-content element node
-    --> should log a list of nodes with a length of 3
+//     4. all the "p" elements of contained inside the .primary-content element node
+//     --> should log a list of nodes with a length of 3
 
-*/
+
 
 
 /*
@@ -30,7 +36,12 @@ Task 2
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
+let button1 = document.querySelector("#alertBtn");
+button1.addEventListener("click", alertSomething);
 
+function alertSomething() {
+  alert("Thanks for visiting Bikes for Refugees!");
+}
 
 /*
 Task 3
@@ -39,6 +50,13 @@ Task 3
 When a user clicks the 'Change colour' button, the background colour of the page should change to red.
 Hint: can you do this with a CSS class instead of adding styles to the element?
 */
+let button2 = document.querySelector("#bgrChangeBtn");
+let body1 = document.querySelector("body")
+button2.addEventListener function()
+
+
+
+
 
 
 /*
